@@ -1,0 +1,63 @@
+#site_name: My Docs
+
+site_name: ACER High Performance Computing
+site_description: UIC ACER user documentation
+site_url: https://uicacer.github.io/acer-hpc-docs/
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+
+  - Getting Started:
+      - Overview: getting-started/index.md
+      - Account Requests: getting-started/accounts.md
+      - Login: getting-started/login.md
+
+  - Lakeshore:
+      - Overview: lakeshore/index.md
+      - Slurm: lakeshore/slurm.md
+      - GPU Jobs: lakeshore/gpu-jobs.md
+      - Storage: lakeshore/storage.md
+      - Partitions: lakeshore/partitions.md
+
+  - Software:
+      - Overview: software/index.md
+      - Python: software/python.md
+      - PyTorch: software/pytorch.md
+      - CUDA: software/cuda.md
+      - GROMACS: software/gromacs.md
+
+  - AI:
+      - Overview: ai/index.md
+      - Ollama: ai/ollama.md
+      - RAG: ai/rag.md
+
+  - Quantum:
+      - Overview: quantum/index.md
+      - Qiskit: quantum/qiskit.md
+      - PennyLane: quantum/pennylane.md
+      - CUDA-Q: quantum/cuda-q.md
+
+  - FAQ: faq.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+
