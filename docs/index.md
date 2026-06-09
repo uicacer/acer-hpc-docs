@@ -1,7 +1,5 @@
 # ACER Documentation
 
-# ACER Documentation
-
 Welcome to the Advanced Cyberinfrastructure for Education and Research (ACER) documentation portal.
 
 ## Available Resources

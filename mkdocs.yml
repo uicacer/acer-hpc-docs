@@ -1,19 +1,47 @@
 #site_name: My Docs
 
-site_name: ACER High Performance Computing
+site_name: Advanced Cyberinfrastructure for Education and Research
 site_description: UIC ACER user documentation
 site_url: https://uicacer.github.io/acer-hpc-docs/
 
+extra_css:
+  - assets/stylesheets/extra.css
+
 theme:
   name: material
+
+  logo: assets/images/acer-logo.png
+
+  favicon: assets/images/acer-logo.png
+
+  palette:
+    - scheme: default
+      primary: blue
+      accent: red
+
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: blue
+      accent: red
+
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
   features:
     - navigation.sections
     - navigation.expand
     - navigation.top
     - navigation.instant
+    - navigation.tabs
+    - navigation.indexes
     - search.highlight
     - search.suggest
     - content.code.copy
+    - toc.follow
 
 plugins:
   - search
